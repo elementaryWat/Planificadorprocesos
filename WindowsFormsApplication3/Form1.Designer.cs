@@ -43,6 +43,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
             this.FlujoEjec = new System.Windows.Forms.DataGridView();
             this.Tiempo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Listo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +76,7 @@
             this.CPU3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.estadisticass = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Estadisticaspromedio = new System.Windows.Forms.DataGridView();
@@ -81,18 +93,65 @@
             this.Tiempoderetorno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Instanteprimerrespuesta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tiemporespuesta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.EstadisticaspromedioE = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadisticasEjecE = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.EstadisticaspromedioS = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadisticasEjecS = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Politica3 = new System.Windows.Forms.RadioButton();
+            this.Politica2 = new System.Windows.Forms.RadioButton();
+            this.Politica = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.politicaESSRTF = new System.Windows.Forms.RadioButton();
+            this.politicaESSJF = new System.Windows.Forms.RadioButton();
+            this.politicaESFCFS = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.FlujoEjec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatosFlow)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            this.estadisticass.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Estadisticaspromedio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.estadisticasEjec)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EstadisticaspromedioE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estadisticasEjecE)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EstadisticaspromedioS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estadisticasEjecS)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // FlujoEjec
@@ -109,7 +168,7 @@
             this.UCPU,
             this.UEntrada,
             this.USalida});
-            this.FlujoEjec.Location = new System.Drawing.Point(0, 3);
+            this.FlujoEjec.Location = new System.Drawing.Point(6, 6);
             this.FlujoEjec.Name = "FlujoEjec";
             this.FlujoEjec.Size = new System.Drawing.Size(1046, 374);
             this.FlujoEjec.TabIndex = 0;
@@ -255,15 +314,17 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // tabControl1
+            // estadisticass
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(2, 124);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1056, 410);
-            this.tabControl1.TabIndex = 4;
+            this.estadisticass.Controls.Add(this.tabPage1);
+            this.estadisticass.Controls.Add(this.tabPage2);
+            this.estadisticass.Controls.Add(this.tabPage3);
+            this.estadisticass.Controls.Add(this.tabPage4);
+            this.estadisticass.Location = new System.Drawing.Point(12, 201);
+            this.estadisticass.Name = "estadisticass";
+            this.estadisticass.SelectedIndex = 0;
+            this.estadisticass.Size = new System.Drawing.Size(1056, 371);
+            this.estadisticass.TabIndex = 4;
             // 
             // tabPage1
             // 
@@ -271,7 +332,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1048, 384);
+            this.tabPage1.Size = new System.Drawing.Size(1048, 345);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Datos Ejecucion";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -283,9 +344,9 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1048, 384);
+            this.tabPage2.Size = new System.Drawing.Size(1048, 345);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Estadisticas";
+            this.tabPage2.Text = "Estadisticas CPU";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Estadisticaspromedio
@@ -390,20 +451,239 @@
             this.Tiemporespuesta.HeaderText = "Tiempo de respuesta (PR-TA)";
             this.Tiemporespuesta.Name = "Tiemporespuesta";
             // 
-            // label1
+            // tabPage3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(855, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Referencias";
+            this.tabPage3.Controls.Add(this.EstadisticaspromedioE);
+            this.tabPage3.Controls.Add(this.estadisticasEjecE);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1048, 345);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Estadisticas Entrada";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // EstadisticaspromedioE
+            // 
+            this.EstadisticaspromedioE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.EstadisticaspromedioE.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15});
+            this.EstadisticaspromedioE.Location = new System.Drawing.Point(3, 192);
+            this.EstadisticaspromedioE.Name = "EstadisticaspromedioE";
+            this.EstadisticaspromedioE.Size = new System.Drawing.Size(348, 118);
+            this.EstadisticaspromedioE.TabIndex = 2;
+            this.EstadisticaspromedioE.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "Tiempo de espera medio";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "Tiempo de retorno medio";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.HeaderText = "Tiempo de respuesta medio";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // estadisticasEjecE
+            // 
+            this.estadisticasEjecE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.estadisticasEjecE.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12});
+            this.estadisticasEjecE.Location = new System.Drawing.Point(0, 3);
+            this.estadisticasEjecE.Name = "estadisticasEjecE";
+            this.estadisticasEjecE.Size = new System.Drawing.Size(1038, 183);
+            this.estadisticasEjecE.TabIndex = 1;
+            this.estadisticasEjecE.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_2);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id_Proceso";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Aquamarine;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Tiempo retorno(TR) ";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.Lime;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle17;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Tiempo de irrupcion (TI)";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Tiempo de espera (TR-TI)";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Instante de finalizacion (Tt)";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.Lime;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle19;
+            this.dataGridViewTextBoxColumn8.HeaderText = "Tiempo de arribo (TA)";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle20;
+            this.dataGridViewTextBoxColumn10.HeaderText = "Tiempo retorno(Tt-TA) ";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "Instante primer respuesta (PR)";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dataGridViewTextBoxColumn12.DefaultCellStyle = dataGridViewCellStyle21;
+            this.dataGridViewTextBoxColumn12.HeaderText = "Tiempo de respuesta (PR-TA)";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.EstadisticaspromedioS);
+            this.tabPage4.Controls.Add(this.estadisticasEjecS);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1048, 345);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Estadisticas Salida";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // EstadisticaspromedioS
+            // 
+            this.EstadisticaspromedioS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.EstadisticaspromedioS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn25,
+            this.dataGridViewTextBoxColumn26,
+            this.dataGridViewTextBoxColumn27});
+            this.EstadisticaspromedioS.Location = new System.Drawing.Point(6, 192);
+            this.EstadisticaspromedioS.Name = "EstadisticaspromedioS";
+            this.EstadisticaspromedioS.Size = new System.Drawing.Size(348, 118);
+            this.EstadisticaspromedioS.TabIndex = 3;
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.HeaderText = "Tiempo de espera medio";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.HeaderText = "Tiempo de retorno medio";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.HeaderText = "Tiempo de respuesta medio";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            // 
+            // estadisticasEjecS
+            // 
+            this.estadisticasEjecS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.estadisticasEjecS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21,
+            this.dataGridViewTextBoxColumn22,
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24});
+            this.estadisticasEjecS.Location = new System.Drawing.Point(0, 3);
+            this.estadisticasEjecS.Name = "estadisticasEjecS";
+            this.estadisticasEjecS.Size = new System.Drawing.Size(1038, 183);
+            this.estadisticasEjecS.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.HeaderText = "Id_Proceso";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.Aquamarine;
+            this.dataGridViewTextBoxColumn17.DefaultCellStyle = dataGridViewCellStyle22;
+            this.dataGridViewTextBoxColumn17.HeaderText = "Tiempo retorno(TR) ";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Lime;
+            this.dataGridViewTextBoxColumn18.DefaultCellStyle = dataGridViewCellStyle23;
+            this.dataGridViewTextBoxColumn18.HeaderText = "Tiempo de irrupcion (TI)";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dataGridViewTextBoxColumn19.DefaultCellStyle = dataGridViewCellStyle24;
+            this.dataGridViewTextBoxColumn19.HeaderText = "Tiempo de espera (TR-TI)";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.HeaderText = "Instante de finalizacion (Tt)";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.Lime;
+            this.dataGridViewTextBoxColumn21.DefaultCellStyle = dataGridViewCellStyle25;
+            this.dataGridViewTextBoxColumn21.HeaderText = "Tiempo de arribo (TA)";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dataGridViewTextBoxColumn22.DefaultCellStyle = dataGridViewCellStyle26;
+            this.dataGridViewTextBoxColumn22.HeaderText = "Tiempo retorno(Tt-TA) ";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.HeaderText = "Instante primer respuesta (PR)";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dataGridViewTextBoxColumn24.DefaultCellStyle = dataGridViewCellStyle27;
+            this.dataGridViewTextBoxColumn24.HeaderText = "Tiempo de respuesta (PR-TA)";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(855, 53);
+            this.label2.Location = new System.Drawing.Point(6, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 6;
@@ -413,7 +693,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.label3.Location = new System.Drawing.Point(855, 83);
+            this.label3.Location = new System.Drawing.Point(4, 41);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 13);
             this.label3.TabIndex = 7;
@@ -423,7 +703,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(855, 108);
+            this.label4.Location = new System.Drawing.Point(6, 60);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 13);
             this.label4.TabIndex = 8;
@@ -439,17 +719,116 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(854, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 86);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Referencias";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.Politica3);
+            this.groupBox2.Controls.Add(this.Politica2);
+            this.groupBox2.Controls.Add(this.Politica);
+            this.groupBox2.Location = new System.Drawing.Point(854, 94);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(181, 47);
+            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Politica CPU";
+            // 
+            // Politica3
+            // 
+            this.Politica3.AutoSize = true;
+            this.Politica3.Location = new System.Drawing.Point(120, 19);
+            this.Politica3.Name = "Politica3";
+            this.Politica3.Size = new System.Drawing.Size(53, 17);
+            this.Politica3.TabIndex = 11;
+            this.Politica3.Text = "SRTF";
+            this.Politica3.UseVisualStyleBackColor = true;
+            // 
+            // Politica2
+            // 
+            this.Politica2.AutoSize = true;
+            this.Politica2.Location = new System.Drawing.Point(63, 19);
+            this.Politica2.Name = "Politica2";
+            this.Politica2.Size = new System.Drawing.Size(43, 17);
+            this.Politica2.TabIndex = 10;
+            this.Politica2.Text = "SJF";
+            this.Politica2.UseVisualStyleBackColor = true;
+            // 
+            // Politica
+            // 
+            this.Politica.AutoSize = true;
+            this.Politica.Checked = true;
+            this.Politica.Location = new System.Drawing.Point(6, 19);
+            this.Politica.Name = "Politica";
+            this.Politica.Size = new System.Drawing.Size(51, 17);
+            this.Politica.TabIndex = 9;
+            this.Politica.TabStop = true;
+            this.Politica.Text = "FCFS";
+            this.Politica.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.politicaESSRTF);
+            this.groupBox3.Controls.Add(this.politicaESSJF);
+            this.groupBox3.Controls.Add(this.politicaESFCFS);
+            this.groupBox3.Location = new System.Drawing.Point(854, 161);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(181, 47);
+            this.groupBox3.TabIndex = 12;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Politica E/S";
+            // 
+            // politicaESSRTF
+            // 
+            this.politicaESSRTF.AutoSize = true;
+            this.politicaESSRTF.Location = new System.Drawing.Point(120, 19);
+            this.politicaESSRTF.Name = "politicaESSRTF";
+            this.politicaESSRTF.Size = new System.Drawing.Size(53, 17);
+            this.politicaESSRTF.TabIndex = 11;
+            this.politicaESSRTF.Text = "SRTF";
+            this.politicaESSRTF.UseVisualStyleBackColor = true;
+            // 
+            // politicaESSJF
+            // 
+            this.politicaESSJF.AutoSize = true;
+            this.politicaESSJF.Location = new System.Drawing.Point(63, 19);
+            this.politicaESSJF.Name = "politicaESSJF";
+            this.politicaESSJF.Size = new System.Drawing.Size(43, 17);
+            this.politicaESSJF.TabIndex = 10;
+            this.politicaESSJF.Text = "SJF";
+            this.politicaESSJF.UseVisualStyleBackColor = true;
+            // 
+            // politicaESFCFS
+            // 
+            this.politicaESFCFS.AutoSize = true;
+            this.politicaESFCFS.Checked = true;
+            this.politicaESFCFS.Location = new System.Drawing.Point(6, 19);
+            this.politicaESFCFS.Name = "politicaESFCFS";
+            this.politicaESFCFS.Size = new System.Drawing.Size(51, 17);
+            this.politicaESFCFS.TabIndex = 9;
+            this.politicaESFCFS.TabStop = true;
+            this.politicaESFCFS.Text = "FCFS";
+            this.politicaESFCFS.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 546);
+            this.ClientSize = new System.Drawing.Size(1070, 570);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.estadisticass);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.DatosFlow);
@@ -458,13 +837,24 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.FlujoEjec)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatosFlow)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            this.estadisticass.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Estadisticaspromedio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.estadisticasEjec)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EstadisticaspromedioE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estadisticasEjecE)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.EstadisticaspromedioS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estadisticasEjecS)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -481,7 +871,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CPU3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl estadisticass;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView estadisticasEjec;
@@ -498,7 +888,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tiempoderetorno;
         private System.Windows.Forms.DataGridViewTextBoxColumn Instanteprimerrespuesta;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tiemporespuesta;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -513,6 +902,45 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn UEntrada;
         private System.Windows.Forms.DataGridViewTextBoxColumn USalida;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton Politica3;
+        private System.Windows.Forms.RadioButton Politica2;
+        private System.Windows.Forms.RadioButton Politica;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.DataGridView EstadisticaspromedioE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridView estadisticasEjecE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.DataGridView EstadisticaspromedioS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
+        private System.Windows.Forms.DataGridView estadisticasEjecS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton politicaESSRTF;
+        private System.Windows.Forms.RadioButton politicaESSJF;
+        private System.Windows.Forms.RadioButton politicaESFCFS;
     }
 }
 
