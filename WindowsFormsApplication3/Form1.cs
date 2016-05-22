@@ -19,16 +19,6 @@ namespace WindowsFormsApplication3
         {
             InitializeComponent();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
         bool[] exProceso;
         int[] pend1CPU;
         int[] pendentrada;
@@ -560,25 +550,11 @@ namespace WindowsFormsApplication3
             
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             DatosFlow.Rows.Clear();
         }
 
-       private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
         //Muestra el cuadro de texto del quantum cuando se selecciona politica RR
         private void Politica4_CheckedChanged(object sender, EventArgs e)
         {
@@ -606,16 +582,6 @@ namespace WindowsFormsApplication3
         private void DatosFlow_KeyUp(object sender, KeyEventArgs e)
         {
             //MessageBox.Show("Se ha cambiado el valor de una celda");
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage4_Click(object sender, EventArgs e)
-        {
-
         }
     }
     class Computador

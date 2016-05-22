@@ -55,6 +55,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.FlujoEjec = new System.Windows.Forms.DataGridView();
             this.Tiempo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Listo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -188,7 +189,6 @@
             this.FlujoEjec.Name = "FlujoEjec";
             this.FlujoEjec.Size = new System.Drawing.Size(1046, 374);
             this.FlujoEjec.TabIndex = 0;
-            this.FlujoEjec.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Tiempo
             // 
@@ -273,7 +273,6 @@
             this.DatosFlow.Name = "DatosFlow";
             this.DatosFlow.Size = new System.Drawing.Size(747, 153);
             this.DatosFlow.TabIndex = 1;
-            this.DatosFlow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             this.DatosFlow.KeyUp += new System.Windows.Forms.KeyEventHandler(this.DatosFlow_KeyUp);
             // 
             // Proceso
@@ -371,7 +370,6 @@
             this.tabPage2.Size = new System.Drawing.Size(1069, 345);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Estadisticas CPU";
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // Estadisticaspromedio
             // 
@@ -380,7 +378,7 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn9});
-            this.Estadisticaspromedio.Location = new System.Drawing.Point(0, 205);
+            this.Estadisticaspromedio.Location = new System.Drawing.Point(4, 200);
             this.Estadisticaspromedio.Name = "Estadisticaspromedio";
             this.Estadisticaspromedio.Size = new System.Drawing.Size(348, 118);
             this.Estadisticaspromedio.TabIndex = 1;
@@ -494,11 +492,10 @@
             this.dataGridViewTextBoxColumn13,
             this.dataGridViewTextBoxColumn14,
             this.dataGridViewTextBoxColumn15});
-            this.EstadisticaspromedioE.Location = new System.Drawing.Point(3, 192);
+            this.EstadisticaspromedioE.Location = new System.Drawing.Point(4, 200);
             this.EstadisticaspromedioE.Name = "EstadisticaspromedioE";
             this.EstadisticaspromedioE.Size = new System.Drawing.Size(348, 118);
             this.EstadisticaspromedioE.TabIndex = 2;
-            this.EstadisticaspromedioE.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // dataGridViewTextBoxColumn13
             // 
@@ -528,11 +525,10 @@
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewTextBoxColumn12});
-            this.estadisticasEjecE.Location = new System.Drawing.Point(0, 3);
+            this.estadisticasEjecE.Location = new System.Drawing.Point(4, 7);
             this.estadisticasEjecE.Name = "estadisticasEjecE";
             this.estadisticasEjecE.Size = new System.Drawing.Size(1038, 183);
             this.estadisticasEjecE.TabIndex = 1;
-            this.estadisticasEjecE.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_2);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -602,7 +598,6 @@
             this.tabPage4.Size = new System.Drawing.Size(1069, 345);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Estadisticas Salida";
-            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // EstadisticaspromedioS
             // 
@@ -611,7 +606,7 @@
             this.dataGridViewTextBoxColumn25,
             this.dataGridViewTextBoxColumn26,
             this.dataGridViewTextBoxColumn27});
-            this.EstadisticaspromedioS.Location = new System.Drawing.Point(6, 192);
+            this.EstadisticaspromedioS.Location = new System.Drawing.Point(4, 200);
             this.EstadisticaspromedioS.Name = "EstadisticaspromedioS";
             this.EstadisticaspromedioS.Size = new System.Drawing.Size(348, 118);
             this.EstadisticaspromedioS.TabIndex = 3;
@@ -644,7 +639,7 @@
             this.dataGridViewTextBoxColumn22,
             this.dataGridViewTextBoxColumn23,
             this.dataGridViewTextBoxColumn24});
-            this.estadisticasEjecS.Location = new System.Drawing.Point(0, 3);
+            this.estadisticasEjecS.Location = new System.Drawing.Point(4, 7);
             this.estadisticasEjecS.Name = "estadisticasEjecS";
             this.estadisticasEjecS.Size = new System.Drawing.Size(1038, 183);
             this.estadisticasEjecS.TabIndex = 2;
@@ -1007,9 +1002,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.DatosFlow);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Planificador de procesos";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.FlujoEjec)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatosFlow)).EndInit();
             this.estadisticass.ResumeLayout(false);
