@@ -129,13 +129,28 @@
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Politica4 = new System.Windows.Forms.RadioButton();
             this.Politica3 = new System.Windows.Forms.RadioButton();
             this.Politica2 = new System.Windows.Forms.RadioButton();
             this.Politica = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.politicaESRR = new System.Windows.Forms.RadioButton();
             this.politicaESSRTF = new System.Windows.Forms.RadioButton();
             this.politicaESSJF = new System.Windows.Forms.RadioButton();
             this.politicaESFCFS = new System.Windows.Forms.RadioButton();
+            this.ConPol4 = new System.Windows.Forms.TextBox();
+            this.NomPol4 = new System.Windows.Forms.Label();
+            this.NomPolRR = new System.Windows.Forms.Label();
+            this.ConPolRR = new System.Windows.Forms.TextBox();
+            this.Promediosrafagas = new System.Windows.Forms.DataGridView();
+            this.PromDifAr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PromRaf1CPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PromEntrada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PromRaf2CPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PromSalida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PromRaf3CPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.NoDatosrep = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.FlujoEjec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatosFlow)).BeginInit();
             this.estadisticass.SuspendLayout();
@@ -152,6 +167,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Promediosrafagas)).BeginInit();
             this.SuspendLayout();
             // 
             // FlujoEjec
@@ -168,7 +184,7 @@
             this.UCPU,
             this.UEntrada,
             this.USalida});
-            this.FlujoEjec.Location = new System.Drawing.Point(6, 6);
+            this.FlujoEjec.Location = new System.Drawing.Point(-17, 22);
             this.FlujoEjec.Name = "FlujoEjec";
             this.FlujoEjec.Size = new System.Drawing.Size(1046, 374);
             this.FlujoEjec.TabIndex = 0;
@@ -258,6 +274,7 @@
             this.DatosFlow.Size = new System.Drawing.Size(747, 153);
             this.DatosFlow.TabIndex = 1;
             this.DatosFlow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            this.DatosFlow.KeyUp += new System.Windows.Forms.KeyEventHandler(this.DatosFlow_KeyUp);
             // 
             // Proceso
             // 
@@ -296,22 +313,26 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button1.ForeColor = System.Drawing.Color.LightCyan;
             this.button1.Location = new System.Drawing.Point(12, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(77, 47);
             this.button1.TabIndex = 2;
             this.button1.Text = "Cargar datos ejercicio 7";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button2.ForeColor = System.Drawing.Color.LightCyan;
             this.button2.Location = new System.Drawing.Point(12, 91);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(64, 35);
             this.button2.TabIndex = 3;
             this.button2.Text = "Iniciar ejecucion";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // estadisticass
@@ -320,34 +341,37 @@
             this.estadisticass.Controls.Add(this.tabPage2);
             this.estadisticass.Controls.Add(this.tabPage3);
             this.estadisticass.Controls.Add(this.tabPage4);
-            this.estadisticass.Location = new System.Drawing.Point(12, 201);
+            this.estadisticass.Location = new System.Drawing.Point(5, 251);
             this.estadisticass.Name = "estadisticass";
             this.estadisticass.SelectedIndex = 0;
-            this.estadisticass.Size = new System.Drawing.Size(1056, 371);
+            this.estadisticass.Size = new System.Drawing.Size(1077, 371);
             this.estadisticass.TabIndex = 4;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.RoyalBlue;
             this.tabPage1.Controls.Add(this.FlujoEjec);
+            this.tabPage1.ForeColor = System.Drawing.Color.Firebrick;
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1048, 345);
+            this.tabPage1.Size = new System.Drawing.Size(1069, 345);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Datos Ejecucion";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.RoyalBlue;
             this.tabPage2.Controls.Add(this.Estadisticaspromedio);
             this.tabPage2.Controls.Add(this.estadisticasEjec);
+            this.tabPage2.ForeColor = System.Drawing.Color.Firebrick;
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1048, 345);
+            this.tabPage2.Size = new System.Drawing.Size(1069, 345);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Estadisticas CPU";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // Estadisticaspromedio
             // 
@@ -453,14 +477,15 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.RoyalBlue;
             this.tabPage3.Controls.Add(this.EstadisticaspromedioE);
             this.tabPage3.Controls.Add(this.estadisticasEjecE);
+            this.tabPage3.ForeColor = System.Drawing.Color.Firebrick;
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1048, 345);
+            this.tabPage3.Size = new System.Drawing.Size(1069, 345);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Estadisticas Entrada";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // EstadisticaspromedioE
             // 
@@ -568,14 +593,16 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.RoyalBlue;
             this.tabPage4.Controls.Add(this.EstadisticaspromedioS);
             this.tabPage4.Controls.Add(this.estadisticasEjecS);
+            this.tabPage4.ForeColor = System.Drawing.Color.Firebrick;
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1048, 345);
+            this.tabPage4.Size = new System.Drawing.Size(1069, 345);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Estadisticas Salida";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // EstadisticaspromedioS
             // 
@@ -711,16 +738,19 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.button3.ForeColor = System.Drawing.Color.LightCyan;
             this.button3.Location = new System.Drawing.Point(12, 53);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(77, 32);
             this.button3.TabIndex = 9;
             this.button3.Text = "Limpiar datos";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.RoyalBlue;
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -733,15 +763,29 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.groupBox2.Controls.Add(this.Politica4);
             this.groupBox2.Controls.Add(this.Politica3);
             this.groupBox2.Controls.Add(this.Politica2);
             this.groupBox2.Controls.Add(this.Politica);
+            this.groupBox2.ForeColor = System.Drawing.Color.LightCyan;
             this.groupBox2.Location = new System.Drawing.Point(854, 94);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(181, 47);
+            this.groupBox2.Size = new System.Drawing.Size(228, 47);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Politica CPU";
+            // 
+            // Politica4
+            // 
+            this.Politica4.AutoSize = true;
+            this.Politica4.Location = new System.Drawing.Point(175, 19);
+            this.Politica4.Name = "Politica4";
+            this.Politica4.Size = new System.Drawing.Size(41, 17);
+            this.Politica4.TabIndex = 13;
+            this.Politica4.Text = "RR";
+            this.Politica4.UseVisualStyleBackColor = true;
+            this.Politica4.CheckedChanged += new System.EventHandler(this.Politica4_CheckedChanged);
             // 
             // Politica3
             // 
@@ -752,6 +796,7 @@
             this.Politica3.TabIndex = 11;
             this.Politica3.Text = "SRTF";
             this.Politica3.UseVisualStyleBackColor = true;
+            this.Politica3.CheckedChanged += new System.EventHandler(this.Politica_CheckedChanged);
             // 
             // Politica2
             // 
@@ -762,6 +807,7 @@
             this.Politica2.TabIndex = 10;
             this.Politica2.Text = "SJF";
             this.Politica2.UseVisualStyleBackColor = true;
+            this.Politica2.CheckedChanged += new System.EventHandler(this.Politica_CheckedChanged);
             // 
             // Politica
             // 
@@ -774,18 +820,33 @@
             this.Politica.TabStop = true;
             this.Politica.Text = "FCFS";
             this.Politica.UseVisualStyleBackColor = true;
+            this.Politica.CheckedChanged += new System.EventHandler(this.Politica_CheckedChanged);
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.groupBox3.Controls.Add(this.politicaESRR);
             this.groupBox3.Controls.Add(this.politicaESSRTF);
             this.groupBox3.Controls.Add(this.politicaESSJF);
             this.groupBox3.Controls.Add(this.politicaESFCFS);
-            this.groupBox3.Location = new System.Drawing.Point(854, 161);
+            this.groupBox3.ForeColor = System.Drawing.Color.LightCyan;
+            this.groupBox3.Location = new System.Drawing.Point(854, 164);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(181, 47);
+            this.groupBox3.Size = new System.Drawing.Size(228, 47);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Politica E/S";
+            // 
+            // politicaESRR
+            // 
+            this.politicaESRR.AutoSize = true;
+            this.politicaESRR.Location = new System.Drawing.Point(175, 19);
+            this.politicaESRR.Name = "politicaESRR";
+            this.politicaESRR.Size = new System.Drawing.Size(41, 17);
+            this.politicaESRR.TabIndex = 12;
+            this.politicaESRR.Text = "RR";
+            this.politicaESRR.UseVisualStyleBackColor = true;
+            this.politicaESRR.CheckedChanged += new System.EventHandler(this.politicaESRR_CheckedChanged);
             // 
             // politicaESSRTF
             // 
@@ -796,6 +857,7 @@
             this.politicaESSRTF.TabIndex = 11;
             this.politicaESSRTF.Text = "SRTF";
             this.politicaESSRTF.UseVisualStyleBackColor = true;
+            this.politicaESSRTF.CheckedChanged += new System.EventHandler(this.politicaESFCFS_CheckedChanged);
             // 
             // politicaESSJF
             // 
@@ -806,6 +868,7 @@
             this.politicaESSJF.TabIndex = 10;
             this.politicaESSJF.Text = "SJF";
             this.politicaESSJF.UseVisualStyleBackColor = true;
+            this.politicaESSJF.CheckedChanged += new System.EventHandler(this.politicaESFCFS_CheckedChanged);
             // 
             // politicaESFCFS
             // 
@@ -818,12 +881,124 @@
             this.politicaESFCFS.TabStop = true;
             this.politicaESFCFS.Text = "FCFS";
             this.politicaESFCFS.UseVisualStyleBackColor = true;
+            this.politicaESFCFS.CheckedChanged += new System.EventHandler(this.politicaESFCFS_CheckedChanged);
+            // 
+            // ConPol4
+            // 
+            this.ConPol4.Location = new System.Drawing.Point(976, 145);
+            this.ConPol4.Name = "ConPol4";
+            this.ConPol4.Size = new System.Drawing.Size(100, 20);
+            this.ConPol4.TabIndex = 13;
+            this.ConPol4.Visible = false;
+            // 
+            // NomPol4
+            // 
+            this.NomPol4.AutoSize = true;
+            this.NomPol4.ForeColor = System.Drawing.Color.LightCyan;
+            this.NomPol4.Location = new System.Drawing.Point(920, 148);
+            this.NomPol4.Name = "NomPol4";
+            this.NomPol4.Size = new System.Drawing.Size(50, 13);
+            this.NomPol4.TabIndex = 14;
+            this.NomPol4.Text = "Quantum";
+            this.NomPol4.Visible = false;
+            // 
+            // NomPolRR
+            // 
+            this.NomPolRR.AutoSize = true;
+            this.NomPolRR.ForeColor = System.Drawing.Color.LightCyan;
+            this.NomPolRR.Location = new System.Drawing.Point(918, 209);
+            this.NomPolRR.Name = "NomPolRR";
+            this.NomPolRR.Size = new System.Drawing.Size(50, 13);
+            this.NomPolRR.TabIndex = 16;
+            this.NomPolRR.Text = "Quantum";
+            this.NomPolRR.Visible = false;
+            // 
+            // ConPolRR
+            // 
+            this.ConPolRR.Location = new System.Drawing.Point(974, 206);
+            this.ConPolRR.Name = "ConPolRR";
+            this.ConPolRR.Size = new System.Drawing.Size(100, 20);
+            this.ConPolRR.TabIndex = 15;
+            this.ConPolRR.Visible = false;
+            // 
+            // Promediosrafagas
+            // 
+            this.Promediosrafagas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Promediosrafagas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PromDifAr,
+            this.PromRaf1CPU,
+            this.PromEntrada,
+            this.PromRaf2CPU,
+            this.PromSalida,
+            this.PromRaf3CPU});
+            this.Promediosrafagas.Location = new System.Drawing.Point(198, 164);
+            this.Promediosrafagas.Name = "Promediosrafagas";
+            this.Promediosrafagas.Size = new System.Drawing.Size(644, 90);
+            this.Promediosrafagas.TabIndex = 17;
+            // 
+            // PromDifAr
+            // 
+            this.PromDifAr.HeaderText = "Promedio diferencia de arribos";
+            this.PromDifAr.Name = "PromDifAr";
+            // 
+            // PromRaf1CPU
+            // 
+            this.PromRaf1CPU.HeaderText = "1ERRCPUPromedio";
+            this.PromRaf1CPU.Name = "PromRaf1CPU";
+            // 
+            // PromEntrada
+            // 
+            this.PromEntrada.HeaderText = "Rafaga Entrada Prom. ";
+            this.PromEntrada.Name = "PromEntrada";
+            // 
+            // PromRaf2CPU
+            // 
+            this.PromRaf2CPU.HeaderText = "2DARCPUPromedio";
+            this.PromRaf2CPU.Name = "PromRaf2CPU";
+            // 
+            // PromSalida
+            // 
+            this.PromSalida.HeaderText = "Rafaga Salida Prom. ";
+            this.PromSalida.Name = "PromSalida";
+            // 
+            // PromRaf3CPU
+            // 
+            this.PromRaf3CPU.HeaderText = "3ERRCPUPromedio";
+            this.PromRaf3CPU.Name = "PromRaf3CPU";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.LightCyan;
+            this.label1.Location = new System.Drawing.Point(103, 198);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Promedio rafagas";
+            // 
+            // NoDatosrep
+            // 
+            this.NoDatosrep.AutoSize = true;
+            this.NoDatosrep.Location = new System.Drawing.Point(12, 228);
+            this.NoDatosrep.Name = "NoDatosrep";
+            this.NoDatosrep.Size = new System.Drawing.Size(152, 17);
+            this.NoDatosrep.TabIndex = 19;
+            this.NoDatosrep.Text = "No mostrar datos repetidos";
+            this.NoDatosrep.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1070, 570);
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.ClientSize = new System.Drawing.Size(1072, 624);
+            this.Controls.Add(this.NoDatosrep);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Promediosrafagas);
+            this.Controls.Add(this.NomPolRR);
+            this.Controls.Add(this.ConPolRR);
+            this.Controls.Add(this.NomPol4);
+            this.Controls.Add(this.ConPol4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -854,7 +1029,9 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Promediosrafagas)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -941,6 +1118,21 @@
         private System.Windows.Forms.RadioButton politicaESSRTF;
         private System.Windows.Forms.RadioButton politicaESSJF;
         private System.Windows.Forms.RadioButton politicaESFCFS;
+        private System.Windows.Forms.RadioButton Politica4;
+        private System.Windows.Forms.RadioButton politicaESRR;
+        private System.Windows.Forms.TextBox ConPol4;
+        private System.Windows.Forms.Label NomPol4;
+        private System.Windows.Forms.Label NomPolRR;
+        private System.Windows.Forms.TextBox ConPolRR;
+        private System.Windows.Forms.DataGridView Promediosrafagas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PromDifAr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PromRaf1CPU;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PromEntrada;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PromRaf2CPU;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PromSalida;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PromRaf3CPU;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox NoDatosrep;
     }
 }
 
