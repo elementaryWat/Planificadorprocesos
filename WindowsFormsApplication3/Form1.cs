@@ -303,7 +303,9 @@ namespace WindowsFormsApplication3
         string backenejc;
         string backenejcent;
         string backenejcsal;
-        
+        Queue<int> filasgantt= new Queue<int>();
+        Queue<int> filasganttE = new Queue<int>();
+        Queue<int> filasganttS = new Queue<int>();
         private void imprimir()
         {
             //Imprime datos ejecucion 
@@ -422,6 +424,22 @@ namespace WindowsFormsApplication3
             //Para no imprimir filas con datos redundantes se verifica que por lo menos algun valor sea diferente de la fila anterior
             if ((colacpu != backcolacpu || colaBE != backcolaBE || colaBS != backcolaBS || colaE != backcolaE || colaS != backcolaS || enejc != backenejc || enejcent != backenejcent || enejcsal != backenejcsal) || !NoDatosrep.Checked)
             {
+                bool cambiarcolor = false;
+                bool cambiarcolorE = false;
+                bool cambiarcolorS = false;
+                if (enejc != backenejc && (backenejc != "" || enejc != "-"))
+                {
+                    cambiarcolor = true;
+                }
+                if (enejcent != backenejcent && (backenejcent != "" || enejcent != "-"))
+                {
+                    cambiarcolorE = true;
+                }
+                if (enejcsal != backenejcsal && (backenejcsal != "" || enejcsal!="-"))
+                {
+                    cambiarcolorS = true;
+                }
+
                 backcolacpu = colacpu;
                 backcolaBE = colaBE;
                 backcolaBS = colaBS;
@@ -432,6 +450,22 @@ namespace WindowsFormsApplication3
                 backenejcsal = enejcsal;
                 string[] row = { reloj.ToString(), colacpu, enejc, colaBE + "/" + colaBS, colacpu, colaE, colaS, enejc, enejcent, enejcsal };
                 FlujoEjec.Rows.Add(row);
+                //Resalta filas para GANTT CPU
+                if (cambiarcolor && InstGant.Checked)
+                {
+                    filasgantt.Enqueue((FlujoEjec.Rows.Count - 2));
+                }
+                //Resalta filas para GANTT Entrada
+                if (cambiarcolorE && InstGant.Checked)
+                {
+                    filasganttE.Enqueue((FlujoEjec.Rows.Count - 2));
+                }
+                //Resalta filas para GANTT Salida
+                if (cambiarcolorS && InstGant.Checked)
+                {
+                    filasganttS.Enqueue((FlujoEjec.Rows.Count - 2));
+                }
+
             }
         }
         private void button2_Click(object sender, EventArgs e)
@@ -518,6 +552,9 @@ namespace WindowsFormsApplication3
                         ordenador.politicaES = politicaES;
                         ordenador.tiempoquantum = tiempoquantum;
                         ordenador.tiempoquantumES = tiempoquantumES;
+                        filasgantt.Clear();
+                        filasganttE.Clear();
+                        filasganttS.Clear();
                         while (notermi())
                         {
                             //MessageBox.Show("Hola");
@@ -535,6 +572,29 @@ namespace WindowsFormsApplication3
                             reloj++;
                         }
                         imprimirestadisticas();
+                        int[] filagant=filasgantt.ToArray();
+                        DataGridViewCellStyle style = new DataGridViewCellStyle();
+                        style.BackColor = Color.Aquamarine;
+                        int[] filagantE = filasganttE.ToArray();
+                        DataGridViewCellStyle styleE = new DataGridViewCellStyle();
+                        styleE.BackColor = Color.LightGreen;
+                        int[] filagantS = filasganttS.ToArray();
+                        DataGridViewCellStyle styleS = new DataGridViewCellStyle();
+                        styleS.BackColor = Color.Orchid;
+
+                        for (int y=0;y< filagant.Length;y++)
+                        {
+                            FlujoEjec.Rows[filagant[y]].Cells[2].Style = style;
+                            FlujoEjec.Rows[filagant[y]].Cells[7].Style = style;
+                        }
+                        for (int y = 0; y < filagantE.Length; y++)
+                        {
+                            FlujoEjec.Rows[filagantE[y]].Cells[8].Style = styleE;
+                        }
+                        for (int y = 0; y < filagantS.Length; y++)
+                        {
+                            FlujoEjec.Rows[filagantS[y]].Cells[9].Style = styleS;
+                        }
                     }
                 }
                 catch (FormatException)

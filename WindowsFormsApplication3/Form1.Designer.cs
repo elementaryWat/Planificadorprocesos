@@ -150,8 +150,8 @@
             this.PromRaf2CPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PromSalida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PromRaf3CPU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
             this.NoDatosrep = new System.Windows.Forms.CheckBox();
+            this.InstGant = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.FlujoEjec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DatosFlow)).BeginInit();
             this.estadisticass.SuspendLayout();
@@ -961,16 +961,6 @@
             this.PromRaf3CPU.HeaderText = "3ERRCPUPromedio";
             this.PromRaf3CPU.Name = "PromRaf3CPU";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.LightCyan;
-            this.label1.Location = new System.Drawing.Point(103, 198);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Promedio rafagas";
-            // 
             // NoDatosrep
             // 
             this.NoDatosrep.AutoSize = true;
@@ -981,14 +971,26 @@
             this.NoDatosrep.Text = "No mostrar datos repetidos";
             this.NoDatosrep.UseVisualStyleBackColor = true;
             // 
+            // InstGant
+            // 
+            this.InstGant.AutoSize = true;
+            this.InstGant.Checked = true;
+            this.InstGant.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.InstGant.Location = new System.Drawing.Point(12, 209);
+            this.InstGant.Name = "InstGant";
+            this.InstGant.Size = new System.Drawing.Size(171, 17);
+            this.InstGant.TabIndex = 20;
+            this.InstGant.Text = "Señalar instantes para GANTT";
+            this.InstGant.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(1072, 624);
+            this.Controls.Add(this.InstGant);
             this.Controls.Add(this.NoDatosrep);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.Promediosrafagas);
             this.Controls.Add(this.NomPolRR);
             this.Controls.Add(this.ConPolRR);
@@ -1126,8 +1128,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PromRaf2CPU;
         private System.Windows.Forms.DataGridViewTextBoxColumn PromSalida;
         private System.Windows.Forms.DataGridViewTextBoxColumn PromRaf3CPU;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox NoDatosrep;
+        private System.Windows.Forms.CheckBox InstGant;
     }
 }
 
