@@ -396,30 +396,30 @@ namespace WindowsFormsApplication3
                 }
             }
             string enejc = "";
-            if (Int32.Parse(ordenador.uCPU.ToString()) == -1)
+            if (ordenador.uCPU == -1)
             {
                 enejc = "-";
             } else
             {
-                enejc = DatosFlow.Rows[Int32.Parse(ordenador.uCPU.ToString())].Cells[0].Value.ToString() ;
+                enejc = DatosFlow.Rows[ordenador.uCPU].Cells[0].Value.ToString() ;
             }
             string enejcent = "";
-            if (Int32.Parse(ordenador.UEntrada.ToString()) == -1)
+            if (ordenador.UEntrada == -1)
             {
                 enejcent = "-";
             }
             else
             {
-                enejcent = DatosFlow.Rows[Int32.Parse(ordenador.UEntrada.ToString())].Cells[0].Value.ToString();
+                enejcent = DatosFlow.Rows[ordenador.UEntrada].Cells[0].Value.ToString();
             }
             string enejcsal = "";
-            if (Int32.Parse(ordenador.USalida.ToString()) == -1)
+            if (ordenador.USalida == -1)
             {
                 enejcsal = "-";
             }
             else
             {
-                enejcsal = DatosFlow.Rows[Int32.Parse(ordenador.USalida.ToString())].Cells[0].Value.ToString();
+                enejcsal = DatosFlow.Rows[ordenador.USalida].Cells[0].Value.ToString();
             }
             //Para no imprimir filas con datos redundantes se verifica que por lo menos algun valor sea diferente de la fila anterior
             if ((colacpu != backcolacpu || colaBE != backcolaBE || colaBS != backcolaBS || colaE != backcolaE || colaS != backcolaS || enejc != backenejc || enejcent != backenejcent || enejcsal != backenejcsal) || !NoDatosrep.Checked)
@@ -502,6 +502,11 @@ namespace WindowsFormsApplication3
                 try
                 {
                     tiempoquantum = Int32.Parse(ConPol4.Text);
+                    if (tiempoquantum<=0)
+                    {
+                        MessageBox.Show("Debe ingresar un valor de quantum para CPU mayor que 0");
+                        noerror = false;
+                    }
                 }
                 catch (FormatException)
                 {
@@ -528,6 +533,11 @@ namespace WindowsFormsApplication3
                 try
                 {
                     tiempoquantumES = Int32.Parse(ConPolRR.Text);
+                    if (tiempoquantumES <= 0)
+                    {
+                        MessageBox.Show("Debe ingresar un valor de quantum para E/S mayor que 0");
+                        noerror = false;
+                    }
                 }
                 catch (FormatException)
                 {
